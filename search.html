@@ -1,14 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Google Search</title>
+    <title>Google Chrome Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .search-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+        }
+        .search-button {
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <form action="https://www.google.com/search" method="GET">
-            <input type="text" name="q" class="search-box" placeholder="Search Item">
-            <button type="submit" class="search-button">Search</button>
-        </form>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        </div>
+        <div class="search-form">
+            <form action="https://www.google.com/search" method="GET">
+                <input type="text" name="q" class="search-input" placeholder="Search Item">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
